@@ -19,7 +19,7 @@
           <img src="{{ url_for('static', filename='img/logo.png')}}" alt="Logo" width="400">
         </figure>
         <div class="d-flex justify-content-center mb-5">
-          <h1>⛽Compensa Gasolina ou Álcool❔</h1>
+          <h1>⛽Compensa Gasolina ou Etanol❔</h1>
         </div>
         <form action="/melhorCombustivel" method="POST">
           <div class="col-12">
@@ -40,7 +40,9 @@
             </button>
           </div>
         </form>
+        <div class="d-flex justify-content-center mt-5 mb-5">
         <h2>{{ msg if msg else ''}}</h2>
+        </div>
       </div>
     </main>
 
