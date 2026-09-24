@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/melhorCombustivel')
+@app.route('/melhorCombustivel', methods=['POST'])
 def calcular_combustivel():
     gasolina = None
     etanol = None
